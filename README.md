@@ -1,8 +1,10 @@
 # ChmuryLab6
 Kopiujemy repozytorium z Lab5:
+
     git clone https://github.com/JakubPatkowski/ChmuryLab5
 
 Modyfikujemy Dockerfile:
+
     # syntax = docker/dockerfile:experimental
 
     FROM node:alpine AS builder
@@ -35,10 +37,12 @@ Modyfikujemy Dockerfile:
 
     CMD ["node", "app.js"]
 
-Budejemy obraz dockera
+Budejemy obraz dockera:
+
     >docker buildx build -t lab6 .
 
-Uruchamiamy obraz
+Uruchamiamy obraz:
+
     docker run -p 8080:8080 lab6
 
 Rezultat komendy run: 
